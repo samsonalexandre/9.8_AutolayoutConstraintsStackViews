@@ -243,8 +243,37 @@
                     <view key="view" contentMode="scaleToFill" id="9qj-4L-KWy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dS-Vq-YMQ">
+                                <rect key="frame" x="98" y="438" width="308" height="21"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="0TY-8Z-Cy6"/>
+                                </constraints>
+                                <string key="text">Поставьте в одну линию два лейбла: левый лейбл имеет отступ от левого края 8 pt, правый лейбл – 8 pt от правого. Между ними отступ тоже 8 pt.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="270" verticalHuggingPriority="251" horizontalCompressionResistancePriority="770" text="Поставьте" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFI-bZ-n0j">
+                                <rect key="frame" x="8" y="437" width="82" height="21"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gR9-Co-4P1"/>
                         <color key="backgroundColor" red="0.61912603134766919" green="0.61948611353786642" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gR9-Co-4P1" firstAttribute="bottom" secondItem="uFI-bZ-n0j" secondAttribute="bottom" constant="355" id="3l5-22-GXT"/>
+                            <constraint firstItem="uFI-bZ-n0j" firstAttribute="top" secondItem="gR9-Co-4P1" secondAttribute="top" constant="393" id="7Yi-EQ-E4z"/>
+                            <constraint firstItem="9dS-Vq-YMQ" firstAttribute="leading" secondItem="uFI-bZ-n0j" secondAttribute="trailing" constant="8" id="C1q-zC-uek"/>
+                            <constraint firstItem="9dS-Vq-YMQ" firstAttribute="top" secondItem="gR9-Co-4P1" secondAttribute="top" constant="394" id="MX7-Jn-O3C"/>
+                            <constraint firstItem="uFI-bZ-n0j" firstAttribute="leading" secondItem="gR9-Co-4P1" secondAttribute="leading" constant="8" id="Yq5-ws-tds"/>
+                            <constraint firstItem="gR9-Co-4P1" firstAttribute="trailing" secondItem="9dS-Vq-YMQ" secondAttribute="trailing" constant="8" id="dmJ-Of-uwU"/>
+                            <constraint firstItem="gR9-Co-4P1" firstAttribute="bottom" secondItem="9dS-Vq-YMQ" secondAttribute="bottom" constant="354" id="vdC-nQ-iHj"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="B" id="LRg-eB-OcV"/>
                 </viewController>
