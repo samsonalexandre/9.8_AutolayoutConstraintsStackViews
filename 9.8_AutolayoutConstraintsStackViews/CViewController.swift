@@ -11,25 +11,21 @@ class CViewController: UIViewController {
 
     
     
-    
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     
     
     @IBOutlet weak var label: UILabel!
     
     var count = 0
-    
     @IBAction func button(_ sender: Any) {
-        
         count += 1
-        
         if (count % 2) != 0 {
-            label.numberOfLines += 1
+            label.numberOfLines += 5
             heightConstraint.constant += 30
             view.layoutIfNeeded()
         } else {
-            label.numberOfLines += 5
-            heightConstraint.constant += 150
+            label.numberOfLines += 1
+            //heightConstraint.constant = 150
             view.layoutIfNeeded()
         }
     }
